@@ -1,0 +1,37 @@
+@use 'variables';
+@use 'mixin';
+
+.header {
+    padding: 26px 0;
+    align-items: center;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        color: variables.$black;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 22px;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 34px;
+
+        &-item {
+            display: block;
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        color: variables.$dark;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

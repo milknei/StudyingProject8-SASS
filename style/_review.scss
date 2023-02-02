@@ -1,0 +1,53 @@
+@use 'variables';
+@use 'mixin';
+
+.review {
+    display: flex;
+    justify-content: center;
+    color: variables.$dark-grey;
+    text-align: center;
+    padding: 70px 0;
+
+    &-title {
+        font-size: 29px;
+        line-height: 36px;
+        margin-bottom: 45px;
+    }
+
+    &-description {
+        font-family: 'Roboto Slab';
+        font-size: 25px;
+        line-height: 31px;
+        margin-bottom: 22px;
+    }
+
+    &-image {
+        width: 70px;
+        margin-bottom: 12px;
+        
+        &-title {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        &-description {
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+    background: #A1BFD4;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        
+        img {
+            width: 100%;
+        }
+    }
+}

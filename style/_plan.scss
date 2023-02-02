@@ -1,0 +1,72 @@
+@use 'variables';
+@use 'mixin';
+
+.plan {
+    display: flex;
+    justify-content: center;
+    background: #DDE7ED;
+    color: variables.$dark-grey;
+    padding: 70px 0;
+
+    &-header {
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
+    &-title {
+        font-size: 29px;
+        line-height: 36px;
+        margin-bottom: 10px ;
+    }
+
+    &-description {
+        font-size: 19px;
+        line-height: 22px;
+    }
+    
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    &-card {
+        padding: 16px;
+        background: variables.$white;
+
+        &-title {
+            font-size: 22px;
+            line-height: 30px;
+            border-radius: 3px;
+            margin-bottom: 18px;
+        }
+    
+        &-description {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 14px;
+        }
+    
+        &-number {
+            font-size: 19px;
+            line-height: 22px;
+            color: #489FD9;
+        }
+
+        &-line {
+            width: 93px;
+            border-top: 1px solid #DBDBDB;
+            margin-bottom: 12px;
+        }
+    }
+
+    &-footer {
+        text-align: center;
+        padding-top: 20px;
+
+        a {
+            color: #489FD9;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@use 'variables';
+@use 'mixin';
+
+.footer {
+    display: flex;
+    align-items: center;
+    background: #2B2C2E;
+    color: #939596;
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 35px 0;
+    }
+
+    &-news {
+        grid-column: 1 / 4;
+
+        &-logo {
+            font-family: 'Roboto Slab';
+            color: variables.$light;
+            font-size: 27px;
+            line-height: 22px;
+            margin-bottom: 25px;
+        }
+
+        &-description {
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 12px;
+        }
+
+        &-bar {
+            width: 80%;
+            height: 40px;
+            background: #5F6166;
+            margin-bottom: 28px;
+
+            &_active {
+                width: 60%;
+                height: 100%;
+                background: variables.$light;
+            }
+        }
+    }
+
+    &-icon {
+        width: 17px;
+        color: variables.$light;
+        margin-right: 12px;
+    }
+
+    &-list {
+        li {
+            margin-bottom: 2px;
+        }
+
+        &-title {
+            color: variables.$light;
+            text-transform: uppercase;
+            margin-bottom: 10px !important;
+        }
+    }
+
+    &-copyright {
+        font-size: 13px;
+        align-self: flex-start;
+        padding: 20px 0;
+        line-height: 22px;
+    }
+}
